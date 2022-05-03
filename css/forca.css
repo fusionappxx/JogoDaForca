@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: #01012b;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#imagem{
+    background-image: url("../img/forca.png");
+    margin-top: 30px;
+    width: 100px;
+    height: 280px;
+    background-repeat: no-repeat;
+}
+#palavra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+.letras{
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #d1f7ff;
+    color: #05d9e8;
+    font-weight: 1000;
+    padding: 2px;
+    margin-right: 1em;
+}
+
+#teclado{
+    margin-top: 30px;
+}
+
+.teclas button{
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow:  0px 1px 5px #ff2a6d;
+    border-radius: 5px;
+    border: 1px solid dimgrey;  
+    color: #05d9e8;
+    background-color: #005678;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 900;
+}
+
+.teclas button:disabled:hover{
+    cursor: not-allowed;
+    transform:scale(1);
+}
+
+.teclas button:hover{
+    transform:scale(1.2);
+}
+
+#reiniciar.reiniciar button {
+    width: 44px;
+}
+
+@media (min-width: 420px){
+    .teclas button{
+        width: 36px;
+        height: 36px;
+    }
+    #palavra{
+        font-size: 1.5em;
+    }
+    .letras{
+        width: 20px;
+    }
+}
+
+@media (min-width: 769px){
+    .teclas button{
+        width: 68px;
+        height: 68px;
+        font-size: 2em;
+    }
+    #palavra{
+        font-size: 2.5em;
+    }
+    .letras{
+        width: 35px;
+    }
+}
+
+
